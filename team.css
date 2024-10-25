@@ -29,16 +29,15 @@ nav {
 }
 
 .navbar li {
-    flex: 1;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .navbar a {
     color: white; 
     text-decoration: none; 
     font-weight: bold; 
-    font-size: 30px;
-    padding: 20px; 
+    font-size: 25px;
+    padding: 15px; 
     display: block; 
 }
 
@@ -47,7 +46,7 @@ nav {
 }
 
 .team h1 {
-    font-size: 50px;
+    font-size: 40px;
     font-weight: bold; 
     color: rgb(255, 255, 255); 
     text-align: center;
@@ -58,6 +57,7 @@ nav {
     display: flex; 
     justify-content: center; 
     gap: 20px; 
+    flex-wrap: wrap;
 }
 
 figure {
@@ -66,7 +66,7 @@ figure {
     background-color: rgba(255, 255, 255, 0.8); 
     padding: 10px; 
     border-radius: 10px; 
-    width: 25%; 
+    width: 80%; 
     max-width: 300px; 
 }
 
@@ -81,4 +81,41 @@ figcaption {
     margin-top: 10px; 
     font-style: italic; 
     color: #333; 
+}
+
+@media (min-width: 600px) {
+    .navbar li {
+        font-size: 25px;
+    }
+    
+    .navbar a {
+        font-size: 28px;
+        padding: 20px; 
+    }
+    
+    .team h1 {
+        font-size: 45px;
+    }
+    
+    .gallery figure {
+        width: 40%; 
+    }
+}
+
+@media (min-width: 1024px) {
+    .navbar li {
+        font-size: 25px;
+    }
+    
+    .navbar a {
+        font-size: 30px;
+    }
+    
+    .team h1 {
+        font-size: 50px;
+    }
+    
+    .gallery figure {
+        width: 25%; 
+    }
 }
