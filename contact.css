@@ -11,7 +11,6 @@
 }
 
 .navbar {
-   
     width: 100%;
 }
 
@@ -24,15 +23,14 @@
 }
 
 .navbar li {
-    flex: 1;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .navbar a {
     display: block;
     color: white;
     text-align: center;
-    padding: 30px;
+    padding: 20px;
     text-decoration: none;
 }
 
@@ -43,19 +41,62 @@
 .contact-container {
     text-align: center;
     color: rgb(255, 255, 255);
-    padding-top: 50px;
+    padding-top: 40px;
 }
 
 .contact h1 {
-    font-size: 50px;
+    font-size: 35px;
     font-weight: bold;
-    margin-top: 110px;
+    margin-top: 60px;
     text-decoration: underline;
-    margin-left:400px;
+    margin-left: 0;
 }
 
 .contact h2 {
     font-weight: bold;
-    margin-top: 20px;
-    margin-left:400px;
+    font-size: 22px;
+    margin-top: 15px;
+    margin-left: 0;
+}
+
+@media (min-width: 600px) {
+    .navbar li {
+        font-size: 25px;
+    }
+
+    .navbar a {
+        padding: 25px;
+    }
+
+    .contact h1 {
+        font-size: 40px;
+        margin-top: 70px;
+        margin-left: 150px;
+    }
+
+    .contact h2 {
+        font-size: 24px;
+        margin-left: 150px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .navbar li {
+        font-size: 30px;
+    }
+
+    .navbar a {
+        padding: 30px;
+    }
+
+    .contact h1 {
+        font-size: 50px;
+        margin-top: 100px;
+        margin-left: 400px;
+    }
+
+    .contact h2 {
+        font-size: 28px;
+        margin-left: 400px;
+    }
 }
