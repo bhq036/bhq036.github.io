@@ -10,7 +10,6 @@
 }
 
 .navbar {
-   
     width: 100%;
     position: absolute;
     top: 0;
@@ -25,14 +24,14 @@
 }
 
 .navbar li {
-    margin: 0 15px;
-    font-size: 30px;
+    margin: 0 10px;
+    font-size: 20px;
 }
 
 .navbar a {
     display: block;
     color: white;
-    padding: 14px;
+    padding: 12px;
     text-decoration: none;
 }
 
@@ -43,19 +42,63 @@
 .text-container {
     text-align: center;
     color: rgb(255, 255, 255);
-    padding-top: 50px;
+    padding-top: 40px;
 }
 
 .box h1 {
-    font-size: 50px;
+    font-size: 35px;
     font-weight: bold;
-    margin-top: 90px;
-    margin-left:400px;
+    margin-top: 60px;
+    margin-left: 0;
 }
 
 .box h2 {
-    font-size: 30px;
+    font-size: 24px;
     font-weight: bold;
     margin-top: 10px;
-    margin-left:400px;
+    margin-left: 0;
+}
+
+@media (min-width: 600px) {
+    .navbar li {
+        font-size: 25px;
+        margin: 0 12px;
+    }
+
+    .navbar a {
+        padding: 14px;
+    }
+
+    .box h1 {
+        font-size: 40px;
+        margin-top: 80px;
+        margin-left: 150px;
+    }
+
+    .box h2 {
+        font-size: 26px;
+        margin-left: 150px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .navbar li {
+        font-size: 30px;
+        margin: 0 15px;
+    }
+
+    .navbar a {
+        padding: 14px;
+    }
+
+    .box h1 {
+        font-size: 50px;
+        margin-top: 90px;
+        margin-left: 400px;
+    }
+
+    .box h2 {
+        font-size: 30px;
+        margin-left: 400px;
+    }
 }
