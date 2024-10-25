@@ -2,7 +2,7 @@
     background-image: url(https://img1.wsimg.com/isteam/stock/DxAr7Bw/:/rs=h:1000,cg:true,m);
     background-size: cover;
     background-position: center;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -12,8 +12,6 @@
 
 .navbar {
     width: 100%;
-    position: absolute;
-    top: 0;
 }
 
 .navbar ul {
@@ -25,14 +23,14 @@
 }
 
 .navbar li {
-    margin: 0 10px;
     font-size: 20px;
 }
 
 .navbar a {
     display: block;
     color: white;
-    padding: 12px;
+    text-align: center;
+    padding: 20px;
     text-decoration: none;
 }
 
@@ -40,7 +38,7 @@
     background-color: rgba(185, 181, 155, 0.8);
 }
 
-.text-container {
+.contact-container {
     text-align: center;
     color: rgb(255, 255, 255);
     padding-top: 40px;
@@ -51,45 +49,54 @@
     font-weight: bold;
     margin-top: 60px;
     text-decoration: underline;
+    margin-left: 0;
 }
 
 .contact h2 {
     font-weight: bold;
     font-size: 22px;
     margin-top: 15px;
+    margin-left: 0;
 }
 
-a, a:visited, a:active {
-    color: inherit;
-    text-decoration: none;
-    -webkit-tap-highlight-color: transparent;
-}
-
-@media (max-width: 600px) {
-    .contact {
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-
+@media (min-width: 600px) {
     .navbar li {
-        font-size: 18px;
+        font-size: 25px;
     }
 
     .navbar a {
-        padding: 10px;
+        padding: 25px;
     }
 
     .contact h1 {
-        font-size: 28px;
-        margin-top: 50px;
+        font-size: 40px;
+        margin-top: 70px;
+        margin-left: 150px;
     }
 
     .contact h2 {
-        font-size: 18px;
+        font-size: 24px;
+        margin-left: 150px;
     }
 }
 
+@media (min-width: 1024px) {
+    .navbar li {
+        font-size: 30px;
+    }
 
+    .navbar a {
+        padding: 30px;
+    }
 
+    .contact h1 {
+        font-size: 50px;
+        margin-top: 100px;
+        margin-left: 400px;
+    }
 
-
+    .contact h2 {
+        font-size: 28px;
+        margin-left: 400px;
+    }
+}
