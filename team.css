@@ -112,9 +112,7 @@ footer a:hover {
     text-decoration: underline;
 }
 
-.service h2, .team h2, .contact h2 {
-    color: #ffffff;
-}
+
 
 .menu img, .gallery img {
     max-width: 300px; 
