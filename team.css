@@ -288,3 +288,6 @@ footer p {
 .contact-form button:hover {
     background-color: #8e8a75;
 }
+.common-passion {
+    color: rgba(185, 181, 155, 0.8);
+}
