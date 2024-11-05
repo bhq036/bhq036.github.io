@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    padding: 0; 
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -74,7 +74,7 @@ footer a:hover {
     background-position: center;
     background-repeat: no-repeat;
     width: 100vw;
-    height: 100vh; 
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -90,6 +90,7 @@ footer a:hover {
     text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
     padding-left: 400px;
     font-size: 50px;
+    text-decoration: underline;
 }
 
 .box h2 {
@@ -108,6 +109,7 @@ footer a:hover {
 
 .service h1, .team h1, .contact h1 {
     color: #ffffff;
+    text-decoration: underline;
 }
 
 .service h2, .team h2, .contact h2 {
@@ -202,4 +204,49 @@ footer p {
     align-items: center;
     max-width: 300px;
     text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .box h1, .box h2 {
+        padding-left: 20px;
+        font-size: 30px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .menu {
+        gap: 10px;
+    }
+
+    .service, .team, .contact {
+        padding: 20px 10px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    .box h1 {
+        padding-left: 200px;
+        font-size: 40px;
+    }
+
+    .box h2 {
+        padding-left: 200px;
+        font-size: 24px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .menu {
+        gap: 15px;
+    }
 }
