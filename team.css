@@ -15,7 +15,6 @@ body {
     margin: 0;
 }
 
-
 .navbar {
     background-color: rgba(185, 181, 155, 0.8); 
     padding: 20px 0;
@@ -44,7 +43,6 @@ body {
 .navbar li a:hover {
     color: #afab90; 
 }
-
 
 footer {
     background-color: rgba(185, 181, 155, 0.8);
@@ -129,7 +127,7 @@ footer a:hover {
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
-.menu, .gallery {
+.menu {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -137,7 +135,7 @@ footer a:hover {
     margin-top: 20px;
 }
 
-.menu figure, .gallery figure {
+.menu figure {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -179,16 +177,6 @@ td {
     color: #555;
 }
 
-.contact-container h1 {
-    color: #ffffff; 
-}
-
-.contact-container h2 {
-    margin: 20px 0;
-    font-weight: normal;
-    color: #666;
-}
-
 .contact-info p {
     font-size: 1.1em;
     margin: 10px 0;
@@ -197,4 +185,21 @@ td {
 footer p {
     font-weight: bold;
     font-size: 1.1em;
+}
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+.gallery figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    text-align: center;
 }
