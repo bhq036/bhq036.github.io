@@ -112,7 +112,9 @@ footer a:hover {
     text-decoration: underline;
 }
 
-
+.service p {
+    color: #555;
+}
 
 .menu img, .gallery img {
     max-width: 300px; 
