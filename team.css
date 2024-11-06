@@ -68,7 +68,8 @@ body {
     display: inline-block;
     padding: 10px 20px;
     margin-top: 20px;
-    font-size: 16px;
+    font-size: 30px;
+    font-weight: bold;
     color: white;
     background-color: #ff7e5f;
     border: none;
@@ -79,7 +80,7 @@ body {
 }
 
 .book-now-button:hover {
-    background-color: #ff3d3d;
+    background-color: #afab90; 
 }
 
 .service, .team, .contact {
