@@ -15,8 +15,9 @@ body {
     margin: 0;
 }
 
+
 .navbar {
-    background-color: rgba(185, 181, 155, 0.8); 
+    background-color: rgba(185, 181, 155, 0.8);
     padding: 20px 0;
     position: sticky;
     top: 0;
@@ -41,15 +42,16 @@ body {
 }
 
 .navbar li a:hover {
-    color: #afab90; 
+    color: #afab90;
 }
+
 
 footer {
     background-color: rgba(185, 181, 155, 0.8);
     padding: 20px 0;
-    width: 100vw;  
-    position: relative; 
-    bottom: 0; 
+    width: 100vw;
+    position: relative;
+    bottom: 0;
     z-index: 10;
     font-size: 25px;
     text-align: center;
@@ -65,8 +67,9 @@ footer a {
 }
 
 footer a:hover {
-    color: #afab90; 
+    color: #afab90;
 }
+
 
 .box {
     background-image: url("https://img1.wsimg.com/isteam/stock/DxAr7Bw/:/rs=h:1000,cg=true,m");
@@ -88,7 +91,7 @@ footer a:hover {
 .box h1 {
     color: #ffffff;
     text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
-    margin-left:400px;
+    margin-left: 400px;
     font-size: 50px;
     text-decoration: underline;
 }
@@ -96,9 +99,10 @@ footer a:hover {
 .box h2 {
     color: #ffffff;
     text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
-    margin-left:400px;
+    margin-left: 400px;
     font-size: 30px;
 }
+
 
 .service, .team, .contact {
     background-color: rgba(185, 181, 155, 0.8);
@@ -116,8 +120,9 @@ footer a:hover {
     color: #555;
 }
 
+
 .menu img, .gallery img {
-    max-width: 300px; 
+    max-width: 300px;
     border: 5px solid #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -131,63 +136,78 @@ footer a:hover {
 
 .menu {
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
     margin-top: 20px;
 }
 
 .menu figure {
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 300px;
     text-align: center;
+    max-width: 300px;
 }
 
-figcaption {
-    margin-top: 10px;
-    font-size: 1em;
-    color: #666;
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 30px;
+.menu figure {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 300px;
 }
 
-th {
-    padding: 15px;
+
+.contact-form button {
+    padding: 10px 20px;
     background-color: rgba(185, 181, 155, 0.8);
-    color: #333;
-    font-weight: bold;
-    font-size: 1.2em; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-tr:nth-child(even) {
-    background-color: rgba(164, 158, 114, 0.8);
+.contact-form button:hover {
+    background-color: rgba(133, 130, 110, 0.8);
 }
 
-tr:nth-child(odd) {
-    background-color: white;
+
+.book-now-button {
+    display: inline-block;
+    padding: 20px 30px;
+    margin-top: 20px;
+    margin-left: 400px;
+    font-size: 30px;
+    color: white;
+    background-color: rgba(185, 181, 155, 0.8);
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-td {
-    padding: 15px;
-    border: 1px solid #ddd;
-    color: #555;
+.book-now-button:hover {
+    background-color: rgba(133, 130, 110, 0.8);
 }
 
-.contact-info p {
-    font-size: 1.1em;
-    margin: 10px 0;
-}
-
+/* Footer Common Styling */
 footer p {
     font-weight: bold;
     font-size: 1.1em;
 }
-
 
 .gallery {
     display: grid;
@@ -203,12 +223,6 @@ footer p {
     align-items: center;
     max-width: 300px;
     text-align: center;
-}
-
-.menu {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
 }
 
 @media (max-width: 768px) {
@@ -255,6 +269,7 @@ footer p {
     }
 }
 
+
 .contact-form {
     background-color: rgba(255, 255, 255, 0.9);
     padding: 20px;
@@ -279,41 +294,10 @@ footer p {
     border: 1px solid #ddd;
 }
 
-.contact-form button {
-    padding: 10px 20px;
-    background-color: #afab90;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.contact-form button:hover {
-    background-color: #8e8a75;
-}
 .common-passion {
     color: rgba(185, 181, 155, 0.8);
 }
 
-.book-now-button {
-            display: inline-block;
-            padding: 20px 30px;
-            margin-top: 20px;
-            margin-left:400px;
-            font-size: 30px;
-            color: white;
-            background-color:  rgba(185, 181, 155, 0.8);
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-.book-now-button:hover {
-    background-color:  rgba(133, 130, 110, 0.8); 
-}
 
 .menu figcaption a {
     color: #ffffff;
@@ -325,21 +309,3 @@ footer p {
 .menu figcaption a:hover {
     color: #afab90;
 }
-
-
-.menu {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-    flex-wrap: wrap;
-}
-
-.menu figure {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    max-width: 300px;
-}
-
