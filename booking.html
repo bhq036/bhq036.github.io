@@ -20,7 +20,7 @@
 
     <div class="booking-container">
         <h1>Book Your Appointment</h1>
-        <form action="mailto:your-email@example.com" method="post" enctype="text/plain" class="booking-form">
+        <form action="mailto:tramphb747@gmail.com" method="post" enctype="text/plain" class="booking-form">
             <label for="name">Your Name:</label>
             <input type="text" id="name" name="name" required>
 
@@ -37,27 +37,27 @@
                 <option value="11:00">11:00 AM</option>
                 <option value="12:00">12:00 PM</option>
                 <option value="2:00">2:00 PM</option>
-                <option value=62:00">6:00 PM</option>
+                <option value="6:00">6:00 PM</option>
             </select>
 
             <label for="service">Service Type:</label>
             <select id="service" name="service" required>
                 <option value="Please choose">Please choose</option>
-                <option value="classic">Classic- Full set, 55€</option>
-                <option value="classic">Classic- Re-fill, 50€</option>
-                <option value="hybrid">Hybrid- Full set, 65€</option>
-                <option value="hybrid">Hybrid- Re-fill, 60€</option>
-                <option value="volume">Volume- Full set, 70€</option>
-                <option value="volume">Volume- Re-fill, 65€</option>
-                <option value="Removal">Removal, 20€</option>
+                <option value="Classic- Full set, 55€">Classic- Full set, 55€</option>
+                <option value="Classic- Re-fill, 50€">Classic- Re-fill, 50€</option>
+                <option value="Hybrid- Full set, 65€">Hybrid- Full set, 65€</option>
+                <option value="Hybrid- Re-fill, 60€">Hybrid- Re-fill, 60€</option>
+                <option value="Volume- Full set, 70€">Volume- Full set, 70€</option>
+                <option value="Volume- Re-fill, 65€">Volume- Re-fill, 65€</option>
+                <option value="Removal, 20€">Removal, 20€</option>
             </select>
 
             <label for="technician">Choose Technician:</label>
             <select id="technician" name="technician" required>
                 <option value="Please choose">Please choose</option>
-                <option value="miley">Miley</option>
-                <option value="sofia">Sofia</option>
-                <option value="annie">Annie</option>
+                <option value="Miley">Miley</option>
+                <option value="Sofia">Sofia</option>
+                <option value="Annie">Annie</option>
             </select>
 
             <button type="submit">Book Now</button>
@@ -69,7 +69,6 @@
     </footer>
 
     <script>
-    
         document.getElementById("date").addEventListener("input", function() {
             let selectedDate = new Date(this.value);
             if (selectedDate.getDay() === 0) {
