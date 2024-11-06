@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Booking - Turtle Lash Studio</title>
+    <link rel="stylesheet" type="text/css" href="Untitled-1.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#service">Our Services</a></li>
+            <li><a href="#team">Our Team</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="booking.html">Book Now</a></li>
+        </ul>
+    </nav>
+
+    <div class="booking-container">
+        <h1>Book Your Appointment</h1>
+        <form action="mailto:your-email@example.com" method="post" enctype="text/plain" class="booking-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" name="date" min="2024-11-13" required>
+
+            <label for="time">Preferred Time:</label>
+            <select id="time" name="time" required>
+                <option value="10:00">10:00 AM</option>
+                <option value="11:00">11:00 AM</option>
+                <option value="12:00">12:00 PM</option>
+                <option value="2:00">2:00 PM</option>
+                <option value=62:00">6:00 PM</option>
+            </select>
+
+            <label for="service">Service Type:</label>
+            <select id="service" name="service" required>
+                <option value="classic">Classic- Full set, 55€</option>
+                <option value="classic">Classic- Re-fill, 50€</option>
+                <option value="hybrid">Hybrid- Full set, 65€</option>
+                <option value="hybrid">Hybrid- Re-fill, 60€</option>
+                <option value="volume">Volume- Full set, 70€</option>
+                <option value="volume">Volume- Re-fill, 65€</option>
+                <option value="Removal">Removal, 20€</option>
+            </select>
+
+            <label for="technician">Choose Technician:</label>
+            <select id="technician" name="technician" required>
+                <option value="miley">Miley</option>
+                <option value="sofia">Sofia</option>
+                <option value="annie">Annie</option>
+            </select>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>MAKE YOUR LASH PERFECT!</p>
+    </footer>
+
+    <script>
+    
+        document.getElementById("date").addEventListener("input", function() {
+            let selectedDate = new Date(this.value);
+            if (selectedDate.getDay() === 0) {
+                alert("We are closed on Sundays. Please select another day.");
+                this.value = "";
+            }
+        });
+    </script>
+
+</body>
+</html>
