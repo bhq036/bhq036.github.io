@@ -132,7 +132,6 @@ footer a:hover {
 .menu {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     gap: 20px;
     margin-top: 20px;
 }
@@ -206,6 +205,11 @@ footer p {
     text-align: center;
 }
 
+.menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
 
 @media (max-width: 768px) {
     .navbar ul {
@@ -307,9 +311,9 @@ footer p {
             transition: background-color 0.3s ease;
         }
 
-        .book-now-button:hover {
-            background-color:  rgba(133, 130, 110, 0.8); 
-        }
+.book-now-button:hover {
+    background-color:  rgba(133, 130, 110, 0.8); 
+}
 
 .menu figcaption a {
     color: #ffffff;
@@ -321,3 +325,21 @@ footer p {
 .menu figcaption a:hover {
     color: #afab90;
 }
+
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.menu figure {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 300px;
+}
+
