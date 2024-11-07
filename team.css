@@ -133,6 +133,10 @@ footer p {
     margin: 0; 
 }
 
+.service h3 {
+    font-size: 20px;
+}
+
 table {
     width: 80%;
     border-collapse: collapse;
