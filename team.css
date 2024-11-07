@@ -271,10 +271,33 @@ table td {
 }
 
 .team {
+    background-color: rgba(185, 181, 155, 0.8);
+    width: 100%;
+    padding: 60px 20px;
+    color: #fff;
     display: flex;
     justify-content: center;
-    gap: 20px;
-    flex-wrap: nowrap;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.team h1 {
+    color: #ffffff;
+    text-decoration: underline;
+    font-size: 36px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.team p {
+    color: #555;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: left;
+    width: 100%; 
+    max-width: none; 
+    margin: 0; 
 }
 
 .team img {
@@ -289,7 +312,6 @@ table td {
     transform: scale(1.05);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
-
 .contact {
     text-align: center;
     flex-direction: column;
