@@ -23,6 +23,7 @@ body {
     z-index: 10;
     font-size: 25px;
     width: 100vw;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .navbar ul {
@@ -54,6 +55,7 @@ footer {
     font-size: 25px;
     text-align: center;
     color: #fff;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
 }
 
 footer a {
@@ -93,46 +95,58 @@ footer p {
 .box h1 {
     color: #ffffff;
     text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
-    margin-left: 400px;
+    margin-left: 10%;
     font-size: 50px;
     text-decoration: underline;
+    max-width: 80%;
 }
 
 .box h2 {
     color: #ffffff;
     text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
-    margin-left: 400px;
+    margin-left: 10%;
     font-size: 30px;
+    max-width: 80%;
 }
 
 .service, .team, .contact {
     background-color: rgba(185, 181, 155, 0.8);
     width: 100%;
-    padding: 40px 20px;
+    padding: 60px 20px;
     color: #fff;
-    display: flex; /* Flexbox để căn chỉnh các phần tử */
-    justify-content: center; /* Căn giữa các phần tử */
-    gap: 20px; /* Khoảng cách giữa các phần tử */
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 60px;
 }
 
 .service h1, .team h1, .contact h1 {
     color: #ffffff;
     text-decoration: underline;
+    font-size: 36px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
 }
 
 .service p, .team p {
     color: #555;
+    font-size: 18px;
+    max-width: 600px;
+    text-align: left;
+    line-height: 1.6;
 }
 
 table {
     width: 80%;
     border-collapse: collapse;
-    margin-top: 20px;
+    margin-top: 40px;
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    margin-left: auto; /* Căn giữa bảng theo chiều ngang */
-    margin-right: auto; /* Căn giữa bảng theo chiều ngang */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 table th, table td {
@@ -200,11 +214,11 @@ table td {
 
 .contact-form {
     background-color: rgba(255, 255, 255, 0.9);
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     max-width: 600px;
-    margin: 20px auto;
+    margin: 40px auto;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -217,19 +231,21 @@ table td {
 
 .contact-form input, .contact-form textarea {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     border-radius: 5px;
     border: 1px solid #ddd;
+    font-size: 16px;
 }
 
 .contact-form button {
-    padding: 10px 20px;
+    padding: 12px 25px;
     background-color: rgba(185, 181, 155, 0.8);
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+    font-size: 18px;
 }
 
 .contact-form button:hover {
@@ -240,7 +256,6 @@ table td {
     display: inline-block;
     padding: 20px 30px;
     margin-top: 20px;
-    margin-left: 400px;
     font-size: 30px;
     font-weight: bold;
     color: white;
@@ -293,8 +308,6 @@ table td {
         margin: 10px auto;
         font-size: 50px;
         padding: 15px 20px;
-        color: #ffffff;
-        margin-left:400px;
     }
 
     table {
@@ -331,7 +344,6 @@ table td {
         gap: 15px;
     }
 }
-
 
 .service, .team {
     display: flex; 
