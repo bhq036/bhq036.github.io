@@ -317,9 +317,9 @@ table td {
     align-items: center;
     justify-content: center;
 }
-.contact p, .contact h1, .contact-form {
-    max-width: 600px;
-    margin: 20px auto;
-    font-size: 18px;
+.contact h1, .contact p, .contact h3 {
+    margin-bottom: 20px; 
+    width: 100%;
+    text-align: center;
 }
 
