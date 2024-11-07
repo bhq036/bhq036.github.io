@@ -12,7 +12,6 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: 0;
 }
 
 .navbar {
@@ -87,26 +86,23 @@ footer p {
     justify-content: center;
     color: #fff;
     text-align: center;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
 }
 
-.box h1 {
+.box h1, .box h2 {
     color: #ffffff;
     text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
     margin-left: 400px;
-    font-size: 50px;
-    text-decoration: underline;
     max-width: 80%;
 }
 
+.box h1 {
+    font-size: 50px;
+    text-decoration: underline;
+}
+
 .box h2 {
-    color: #ffffff;
-    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
-    margin-left: 400px;
     font-size: 30px;
-    max-width: 80%;
 }
 
 .service, .team, .contact {
@@ -118,7 +114,6 @@ footer p {
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
-    margin-top: 60px;
 }
 
 .service h1, .team h1, .contact h1 {
@@ -138,16 +133,13 @@ footer p {
     line-height: 1.6;
 }
 
-
 table {
     width: 80%;
     border-collapse: collapse;
-    margin-top: 40px;
+    margin: 0 auto;
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    margin-left: auto;
-    margin-right: auto;
 }
 
 table th, table td {
@@ -166,7 +158,7 @@ table tr:nth-child(even) {
 }
 
 table tr:nth-child(odd) {
-    background-color: #fff;
+    background-color: #f2f2f2;
 }
 
 table td {
@@ -175,7 +167,7 @@ table td {
 
 .menu img, .gallery img {
     max-width: 300px;
-    border: 5px solid #ffffff;
+    border: 5px solid #f2f2f2;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
@@ -191,7 +183,6 @@ table td {
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
-    margin-top: 20px;
 }
 
 .menu figure, .gallery figure {
@@ -214,12 +205,12 @@ table td {
 }
 
 .contact-form {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(242, 242, 242, 0.9);
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     max-width: 600px;
-    margin: 40px auto;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -247,7 +238,6 @@ table td {
     cursor: pointer;
     transition: background-color 0.3s;
     font-size: 18px;
-    margin-left: 400px;
 }
 
 .contact-form button:hover {
@@ -257,7 +247,6 @@ table td {
 .book-now-button {
     display: inline-block;
     padding: 20px 30px;
-    margin-top: 20px;
     font-size: 30px;
     font-weight: bold;
     color: white;
@@ -278,10 +267,8 @@ table td {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
     justify-items: center;
-    margin-top: 20px;
 }
 
-/* Team section styling */
 .team {
     display: flex;
     justify-content: center;
@@ -291,7 +278,7 @@ table td {
 
 .team img {
     max-width: 300px;
-    border: 5px solid #ffffff;
+    border: 5px solid #f2f2f2;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
@@ -302,7 +289,6 @@ table td {
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Centered content in contact section */
 .contact {
     text-align: center;
     flex-direction: column;
@@ -313,60 +299,4 @@ table td {
     max-width: 600px;
     margin: 20px auto;
     font-size: 18px;
-}
-
-@media (max-width: 768px) {
-    .navbar ul {
-        flex-direction: column;
-        gap: 15px;
-    }
-    .box h1, .box h2 {
-        margin-left: 0;
-        font-size: 30px;
-        padding-left: 20px;
-    }
-    .gallery {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    }
-    .menu {
-        gap: 10px;
-        flex-direction: column;
-    }
-    .service, .team, .contact {
-        padding: 20px 10px;
-    }
-    .book-now-button {
-        margin: 10px auto;
-        font-size: 50px;
-        padding: 15px 20px;
-    }
-    table {
-        font-size: 14px;
-        margin-top: 10px;
-    }
-    th, td {
-        padding: 8px;
-    }
-    .contact-form {
-        padding: 15px;
-        margin: 0 5%;
-        max-width: 90%;
-    }
-}
-
-@media (min-width: 769px) and (max-width: 1200px) {
-    .box h1 {
-        padding-left: 200px;
-        font-size: 40px;
-    }
-    .box h2 {
-        padding-left: 200px;
-        font-size: 24px;
-    }
-    .gallery {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
-    .menu {
-        gap: 15px;
-    }
 }
