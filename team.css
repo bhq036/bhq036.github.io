@@ -213,8 +213,7 @@ table td {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 15px;
-}
+   }
 
 .contact-form label {
     font-weight: bold;
@@ -324,6 +323,7 @@ table td {
     font-size: 18px;
 }
 .contact h1
-   font-size: 50px;
-    text-decoration: underline;
+{
+font-size: 50px;
+text-decoration: underline;
 }
