@@ -335,3 +335,6 @@ tr:nth-child(odd) {
         gap: 15px;
     }
 }
+p {
+    color: #555;
+}
