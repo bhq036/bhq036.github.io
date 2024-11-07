@@ -95,7 +95,7 @@ footer p {
 .box h1 {
     color: #ffffff;
     text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
-    margin-left: 10%;
+    margin-left: 400px;
     font-size: 50px;
     text-decoration: underline;
     max-width: 80%;
@@ -104,7 +104,7 @@ footer p {
 .box h2 {
     color: #ffffff;
     text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
-    margin-left: 10%;
+    margin-left: 400px;
     font-size: 30px;
     max-width: 80%;
 }
@@ -138,7 +138,7 @@ footer p {
     line-height: 1.6;
 }
 
-/* Table styling */
+
 table {
     width: 80%;
     border-collapse: collapse;
@@ -247,6 +247,7 @@ table td {
     cursor: pointer;
     transition: background-color 0.3s;
     font-size: 18px;
+    margin-left: 400px;
 }
 
 .contact-form button:hover {
