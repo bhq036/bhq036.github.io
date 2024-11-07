@@ -1,4 +1,6 @@
 
+css
+Copy code
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +17,6 @@ body {
     text-align: center;
     margin: 0;
 }
-
 
 .navbar {
     background-color: rgba(185, 181, 155, 0.8);
@@ -46,7 +47,6 @@ body {
     color: #afab90;
 }
 
-
 footer {
     background-color: rgba(185, 181, 155, 0.8);
     padding: 20px 0;
@@ -75,7 +75,6 @@ footer p {
     font-weight: bold;
     font-size: 1.1em;
 }
-
 
 .box {
     background-image: url("https://img1.wsimg.com/isteam/stock/DxAr7Bw/:/rs=h:1000,cg=true,m");
@@ -109,7 +108,6 @@ footer p {
     font-size: 30px;
 }
 
-
 .service, .team, .contact {
     background-color: rgba(185, 181, 155, 0.8);
     width: 100%;
@@ -122,42 +120,42 @@ footer p {
     text-decoration: underline;
 }
 
-.service p {
+.service p, .team p {
     color: #555;
 }
-
-.team p {
-    color: #555;
-}
-
 
 table {
-    width: 60%; 
-    max-height: 400px;
+    width: 80%;
     border-collapse: collapse;
     margin-top: 20px;
     overflow: hidden;
-    border-radius: 10px; 
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
 
-th {
-    background-color: #ffffff;
+table th, table td {
     padding: 12px;
-}
-
-tr:nth-child(even) {
-    background-color: rgba(185, 181, 155, 0.8);
-}
-
-tr:nth-child(odd) {
-    background-color: #ffffff; 
-}
-
-td {
-    padding: 10px;
+    border: 1px solid #ddd;
     text-align: center;
+}
+
+table th {
+    background-color: #afab90;
+    color: #fff;
+}
+
+table tr:nth-child(even) {
+    background-color: rgba(185, 181, 155, 0.5);
+}
+
+table tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+table td {
     color: #555;
 }
+
 .menu img, .gallery img {
     max-width: 300px;
     border: 5px solid #ffffff;
@@ -171,22 +169,20 @@ td {
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
-
 .menu {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
     margin-top: 20px;
 }
 
-.menu figure {
-    flex: 1;
+.menu figure, .gallery figure {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
     max-width: 300px;
+    text-align: center;
 }
 
 .menu figcaption a {
@@ -200,27 +196,26 @@ td {
     color: #afab90;
 }
 
-
 .contact-form {
     background-color: rgba(255, 255, 255, 0.9);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     max-width: 600px;
-    margin: 0 auto;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .contact-form label {
     font-weight: bold;
     color: #555;
-    display: block;
-    margin-top: 10px;
 }
 
 .contact-form input, .contact-form textarea {
     width: 100%;
     padding: 10px;
-    margin: 10px 0;
     border-radius: 5px;
     border: 1px solid #ddd;
 }
@@ -238,7 +233,6 @@ td {
 .contact-form button:hover {
     background-color: rgba(133, 130, 110, 0.8);
 }
-
 
 .book-now-button {
     display: inline-block;
@@ -259,7 +253,6 @@ td {
     background-color: rgba(133, 130, 110, 0.8);
 }
 
-
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -267,15 +260,6 @@ td {
     justify-items: center;
     margin-top: 20px;
 }
-
-.gallery figure {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 300px;
-    text-align: center;
-}
-
 
 @media (max-width: 768px) {
     .navbar ul {
