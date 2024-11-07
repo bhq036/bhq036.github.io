@@ -126,11 +126,12 @@ footer p {
 }
 
 .service p, .team p {
-    color: #555;
+     color: #555;
     font-size: 18px;
-    max-width: 600px;
+    width: 100%; 
     text-align: left;
     line-height: 1.6;
+    margin: 0; 
 }
 
 table {
@@ -324,6 +325,6 @@ table td {
     font-size: 18px;
 }
 .contact h1
-     font-size: 50px;
+   font-size: 50px;
     text-decoration: underline;
 }
