@@ -225,6 +225,7 @@ table td {
 .contact-form button {
     padding: 10px 20px;
     background-color: rgba(185, 181, 155, 0.8);
+    font-size: 20px;
     color: white;
     border: none;
     border-radius: 5px;
