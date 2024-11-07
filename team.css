@@ -241,7 +241,8 @@ table td {
     padding: 20px 30px;
     margin-top: 20px;
     margin-left: 400px;
-    font-size: 30px;
+    font-size: 40px;
+    font-weight: bold;
     color: white;
     background-color: rgba(185, 181, 155, 0.8);
     border: none;
