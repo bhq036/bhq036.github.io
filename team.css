@@ -136,7 +136,7 @@ footer p {
     width: 100%;
     text-align: left;
     line-height: 1.6;
-    padding: 0 20px; /* Adds 20px padding on left and right */
+    padding: 0 20px;
     margin: 0;
 }
 
@@ -159,7 +159,7 @@ footer p {
 }
 
 .service p strong, .team p strong {
-    font-size: 21px; /* Increase font size by 3px for emphasis */
+    font-size: 21px; 
 }
 
 
