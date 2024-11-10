@@ -318,7 +318,7 @@ table td {
 .info-link {
     display: inline-block;
     padding: 20px 30px;
-    font-size: 30px;
+    font-size: 15px;
     font-weight: bold;
     color: white;
     background-color: rgba(185, 181, 155, 0.8);
@@ -327,6 +327,7 @@ table td {
     text-decoration: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-left:450px;
 }
 
 .info-link:hover {
