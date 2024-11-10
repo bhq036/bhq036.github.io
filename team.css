@@ -163,7 +163,7 @@ footer p {
 
 
 table {
-    width: 100%;
+    width: 80%;
     border-collapse: collapse;
     margin: 0 auto;
     overflow: hidden;
@@ -331,8 +331,4 @@ table td {
 
 .info-link:hover {
     background-color: rgba(133, 130, 110, 0.8);
-}
-
-.team figcaption {
-    font-size: 24px;
-}
+}, 
