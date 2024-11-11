@@ -69,12 +69,16 @@
     </footer>
 
 <script>
-  dateInput.addEventListener("change", function() {
+dateInput.addEventListener("change", function() {
     const selectedDate = new Date(this.value);
-    if (isNaN(selectedDate.getTime()) || selectedDate.getDay() === 0) {
-        alert("Please select a valid date other than Sunday.");
+    
+  
+    if (isNaN(selectedDate.getTime())) {
+        alert("Please select a valid date.");
         this.value = ""; 
-    }
+    } else if (selectedDate.getDay() === 0) 
+        alert("We are closed on Sunday!");
+        this.value = ""; 
 });
 </script>
    
