@@ -32,17 +32,17 @@
 
             <label for="time">Preferred Time:</label>
             <select id="time" name="time" required>
-                <option value="Please choose">Please choose</option>
+                <option value="">Please choose</option>
                 <option value="10:00">10:00 AM</option>
                 <option value="11:00">11:00 AM</option>
                 <option value="12:00">12:00 PM</option>
-                <option value="2:00">2:00 PM</option>
-                <option value="6:00">6:00 PM</option>
+                <option value="14:00">2:00 PM</option>
+                <option value="18:00">6:00 PM</option>
             </select>
 
             <label for="service">Service Type:</label>
             <select id="service" name="service" required>
-                <option value="Please choose">Please choose</option>
+                <option value="">Please choose</option>
                 <option value="Classic- Full set, 55€">Classic- Full set, 55€</option>
                 <option value="Classic- Re-fill, 50€">Classic- Re-fill, 50€</option>
                 <option value="Hybrid- Full set, 65€">Hybrid- Full set, 65€</option>
@@ -54,7 +54,7 @@
 
             <label for="technician">Choose Technician:</label>
             <select id="technician" name="technician" required>
-                <option value="Please choose">Please choose</option>
+                <option value="">Please choose</option>
                 <option value="Miley">Miley</option>
                 <option value="Sofia">Sofia</option>
                 <option value="Annie">Annie</option>
@@ -69,19 +69,18 @@
     </footer>
 
 <script>
-dateInput.addEventListener("change", function() {
-    const selectedDate = new Date(this.value);
-    
-    if (isNaN(selectedDate.getTime())) {
-        alert("Please select a valid date.");
-        this.value = ""; 
-    } else if (selectedDate.getDay() === 0) {
-        alert("We are closed on Sunday!");
-        this.value = ""; 
-    }
-});
+    document.getElementById("date").addEventListener("change", function() {
+        const selectedDate = new Date(this.value);
+        
+        if (isNaN(selectedDate.getTime())) {
+            alert("Please select a valid date.");
+            this.value = ""; 
+        } else if (selectedDate.getDay() === 0) {
+            alert("We are closed on Sunday!");
+            this.value = ""; 
+        }
+    });
 </script>
-   
 
 </body>
 </html>
