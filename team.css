@@ -14,7 +14,6 @@ body {
     text-align: center;
 }
 
-
 .navbar {
     background-color: rgba(185, 181, 155, 0.8);
     padding: 20px 0;
@@ -25,7 +24,6 @@ body {
     width: 100vw;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
 
 .navbar ul {
     list-style-type: none;
@@ -45,7 +43,6 @@ body {
 .navbar li a:hover {
     color: #afab90;
 }
-
 
 footer {
     background-color: rgba(185, 181, 155, 0.8);
@@ -77,7 +74,6 @@ footer p {
     font-size: 1.1em;
 }
 
-
 .box {
     background-image: url("https://img1.wsimg.com/isteam/stock/DxAr7Bw/:/rs=h:1000,cg=true,m");
     background-size: cover;
@@ -93,7 +89,8 @@ footer p {
     overflow: hidden;
 }
 
-.box h1, .box h2 {
+.box h1,
+.box h2 {
     color: #ffffff;
     text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
     margin-left: 400px;
@@ -109,7 +106,9 @@ footer p {
     font-size: 30px;
 }
 
-.service, .team, .contact {
+.service,
+.team,
+.contact {
     background-color: rgba(185, 181, 155, 0.8);
     width: 100%;
     padding: 60px 20px;
@@ -120,7 +119,9 @@ footer p {
     flex-wrap: wrap;
 }
 
-.service h1, .team h1, .contact h1 {
+.service h1,
+.team h1,
+.contact h1 {
     color: #ffffff;
     text-decoration: underline;
     font-size: 50px;
@@ -128,8 +129,8 @@ footer p {
     text-align: center;
 }
 
-
-.service p, .team p {
+.service p,
+.team p {
     color: #555;
     font-size: 18px;
     width: 100%;
@@ -139,28 +140,30 @@ footer p {
     margin: 0;
 }
 
-
-.service h1, .service h2, .service h3,
-.team h1, .team h2, .team h3,
-.contact h1, .contact h2, .contact h3,
-.service p, .team p, .contact p {
+.service h1,
+.service h2,
+.service h3,
+.team h1,
+.team h2,
+.team h3,
+.contact h1,
+.contact h2,
+.contact h3,
+.service p,
+.team p,
+.contact p {
     margin-top: 15px;
     margin-bottom: 15px;
-}
-
-
-.service p, .team p {
-    font-size: 18px;
 }
 
 .service h3 {
     font-size: 20px;
 }
 
-.service p strong, .team p strong {
-    font-size: 21px; 
+.service p strong,
+.team p strong {
+    font-size: 21px;
 }
-
 
 table {
     width: 80%;
@@ -171,7 +174,8 @@ table {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-table th, table td {
+table th,
+table td {
     padding: 12px;
     border: 1px solid #ddd;
     text-align: center;
@@ -194,8 +198,8 @@ table td {
     color: #555;
 }
 
-
-.menu img, .gallery img {
+.menu img,
+.gallery img {
     max-width: 300px;
     border: 5px solid #f2f2f2;
     border-radius: 10px;
@@ -203,11 +207,11 @@ table td {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.menu img:hover, .gallery img:hover {
+.menu img:hover,
+.gallery img:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
-
 
 .menu {
     display: flex;
@@ -216,7 +220,8 @@ table td {
     flex-wrap: wrap;
 }
 
-.menu figure, .gallery figure {
+.menu figure,
+.gallery figure {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -251,7 +256,8 @@ table td {
     color: #555;
 }
 
-.contact-form input, .contact-form textarea {
+.contact-form input,
+.contact-form textarea {
     width: 100%;
     padding: 12px;
     border-radius: 5px;
@@ -300,7 +306,6 @@ table td {
     justify-items: center;
 }
 
-
 .contact {
     text-align: center;
     flex-direction: column;
@@ -308,7 +313,9 @@ table td {
     justify-content: center;
 }
 
-.contact h1, .contact p, .contact h3 {
+.contact h1,
+.contact p,
+.contact h3 {
     margin-bottom: 20px;
     width: 100%;
     text-align: center;
@@ -326,9 +333,9 @@ table td {
     text-decoration: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-left:450px;
+    margin-left: 450px;
 }
 
 .info-link:hover {
     background-color: rgba(133, 130, 110, 0.8);
-}, 
+}
