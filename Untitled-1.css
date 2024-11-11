@@ -26,10 +26,11 @@ body {
 }
 
 .navbar ul {
-    list-style-type: none;
+    list-style: none;
     display: flex;
     justify-content: center;
     gap: 30px;
+    padding: 0; /* Ensure no padding is applied by default */
 }
 
 .navbar li a {
@@ -44,7 +45,7 @@ body {
     color: #afab90;
 }
 
-/* Form booking container */
+
 .booking-container {
     background-image: url("https://img1.wsimg.com/isteam/stock/DxAr7Bw/:/rs=h:1000,cg=true,m");
     background-size: cover;
@@ -62,7 +63,7 @@ body {
     text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
 }
 
-/* Form booking */
+
 .booking-form {
     background-color: rgba(255, 255, 255, 0.9);
     padding: 20px;
@@ -79,7 +80,8 @@ body {
     margin-top: 10px;
 }
 
-.booking-form input, .booking-form select {
+.booking-form input,
+.booking-form select {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
@@ -115,7 +117,7 @@ footer h1 {
     font-size: 1.1em;
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 768px) {
     .navbar ul {
         flex-direction: column;
